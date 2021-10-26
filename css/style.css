@@ -42,3 +42,9 @@ h3 {
   font-size: 20px;
   line-height: 20px;
 }
+
+.top_header {
+  background-color: #23123a;
+  height: 55px;
+  width: 100vw;
+}
