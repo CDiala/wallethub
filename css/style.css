@@ -48,3 +48,38 @@ h3 {
   height: 55px;
   width: 100vw;
 }
+
+/* Grid containers */
+.grid {
+  display: grid;
+}
+
+.grid--cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* navigation */
+.nav-container {
+  height: 45px;
+  width: 100vw;
+}
+
+.nav-links {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links > li {
+  background-color: var(--color-card);
+  border: 1px solid #ededed;
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+}
+
+.nav-links > li:hover {
+  cursor: pointer;
+}
