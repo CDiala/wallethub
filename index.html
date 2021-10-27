@@ -9,13 +9,20 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="nav-container">
-      <ul class="grid grid--cols-3 nav-links">
-        <li id="nav-1">Navigation Link One</li>
-        <li id="nav-2">Navigation Link Two</li>
-        <li id="nav-3">Navigation Link Three</li>
-      </ul>
-    </nav>
+    <div>
+      <h1 class="hero_header">Do the right thing</h1>
+      <picture>
+        <source
+          media="(min-width: 426px)"
+          srcset="images/desktop_hero.webp, images/desktop_hero.jpg"
+        />
+        <source
+          media="(max-width: 425px)"
+          srcset="images/mobile_hero.webp, images/mobile_hero.jpg"
+        />
+        <img class="hero__image" src="images/desktop_hero.jpg" alt="" />
+      </picture>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

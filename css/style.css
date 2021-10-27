@@ -30,7 +30,7 @@ h1 {
   color: var(--color-card);
   font-size: 102.18px;
   font-weight: 800;
-  line-height: 112.62px;
+  line-height: 122.62px;
 }
 
 h2 {
@@ -82,4 +82,43 @@ h3 {
 
 .nav-links > li:hover {
   cursor: pointer;
+}
+
+/* hero block */
+.hero__image {
+  width: 100vw;
+}
+
+.hero_header {
+  left: 57px;
+  margin: 0;
+  position: absolute;
+  top: 72px;
+}
+
+@media screen and (max-width: 1162px) {
+  .hero_header {
+    /* font-size: 92px;
+    line-height: 64.26px;
+    margin: 32px auto; */
+    width: 80%;
+    font-size: 8vw;
+    margin: 1vw auto;
+  }
+
+  .hero__image {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero_header {
+    font-size: 54px;
+    line-height: 64.26px;
+    margin: 42px auto;
+  }
+
+  .hero__image {
+    width: 100vw;
+  }
 }
