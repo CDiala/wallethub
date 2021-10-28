@@ -10,6 +10,12 @@
   --color-selection: #373737;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Typography */
 ::selection {
   background-color: var(--color-selection);
@@ -31,6 +37,8 @@ h1 {
   font-size: 102.18px;
   font-weight: 800;
   line-height: 122.62px;
+  /* line-height: 0px; */
+  margin: 0;
 }
 
 h2 {
@@ -101,9 +109,9 @@ h3 {
     /* font-size: 92px;
     line-height: 64.26px;
     margin: 32px auto; */
-    width: 80%;
+    /* width: 80%; */
     font-size: 8vw;
-    margin: 1vw auto;
+    margin: 0 auto;
   }
 
   .hero__image {
@@ -121,4 +129,158 @@ h3 {
   .hero__image {
     width: 100vw;
   }
+}
+
+/* Card Component*/
+.card {
+  background-color: var(--color-card);
+  grid-template-rows: repeat(4, 1fr);
+  height: 370px;
+  margin: auto;
+  padding: 46px 72px;
+  width: 1002px;
+}
+
+.grid--cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.card-header_container {
+  align-items: center;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.card-header,
+.card_review {
+  margin: 0;
+}
+
+.card-header {
+  color: #373737;
+  flex-grow: 1;
+  font-weight: 400;
+}
+
+.card_rating {
+  /* background-color: white; */
+  display: flex;
+}
+
+.star,
+svg {
+  width: 12px;
+}
+
+/* .star_empty,
+.cls-1 {
+  fill: none;
+  fill: none;
+  stroke: #59d8d1;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.cls-1.star {
+  width: 12px;
+}
+
+.star_fill {
+  fill: #59d8d1;
+} */
+
+#star-5 {
+  margin-right: 12px;
+}
+
+.card-main,
+.card-main_left {
+  display: flex;
+}
+
+.card-main {
+  column-gap: 36px;
+}
+
+.card-main_left {
+  column-gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  height: 96px;
+}
+
+.card-main_credit-card {
+  display: grid;
+  row-gap: 23px;
+}
+
+.credit-card {
+  height: 96px;
+}
+
+.btn-apply {
+  border-radius: 5.4px;
+  border: 1px solid white;
+  font-family: "proxima nova";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 14px;
+  outline: none;
+  padding: 12px 97px;
+  width: 272px;
+}
+
+.btn-apply:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-button);
+  color: #fff;
+}
+
+.card-info {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-info > li {
+  font-size: 18px;
+  margin-bottom: 17px;
+}
+
+.card-divider {
+  margin-top: 34px;
+  margin-bottom: 23px;
+  width: 100%;
+}
+
+.card-rates {
+  font-size: 18px;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.approval_container > * {
+  margin: 0;
+  text-align: center;
+}
+
+.approval_container > h4 {
+  font-weight: 400;
+  margin: 0 auto;
+  width: 82px;
+}
+
+.good_badge {
+  background-color: var(--color-badge);
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 700;
+  line-height: initial;
+  margin-top: 14px;
+  padding: 7px 15px;
 }
