@@ -150,7 +150,7 @@ h3 {
   align-items: center;
   display: flex;
   gap: 20px;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 
 .card-header,
@@ -218,7 +218,8 @@ svg {
 .card-main_credit-card {
   display: grid;
   grid-template-columns: 272px 1fr;
-  column-gap: 50px;
+  column-gap: 40px;
+  /* column-gap: 50px; */
 }
 
 .credit-card {
@@ -263,12 +264,14 @@ svg {
 }
 
 .card-divider {
-  margin-top: 34px;
-  margin-bottom: 23px;
+  /* margin-top: 34px;
+  margin-bottom: 23px; */
+  align-self: end;
   width: 100%;
 }
 
 .card-rates {
+  align-self: center;
   font-size: 18px;
   height: max-content;
 }
@@ -325,7 +328,7 @@ a {
 /* Mobile Screens */
 @media screen and (max-width: 1019px) {
   .card {
-    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 30px 50px;
   }
 }
@@ -344,6 +347,12 @@ a {
   .card-info > li {
     font-size: 17px;
     margin-bottom: 9px;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 775px) {
+  .block.card_block h2 {
+    white-space: nowrap;
   }
 }
 
@@ -401,8 +410,9 @@ a {
   }
 
   .block.card_block h2 {
-    padding-left: 50px;
+    padding: 0 50px;
     font-size: 18px;
+    line-height: 20px;
     margin-bottom: 24px;
   }
 
@@ -415,6 +425,10 @@ a {
 
   .card-header_container {
     margin: 15px 0;
+  }
+
+  .card-header {
+    font-size: 17px;
   }
 
   .card_rating {
@@ -438,7 +452,7 @@ a {
 
 @media screen and (max-width: 425px) {
   .block.card_block h2 {
-    padding-left: 15px;
+    padding: 0 15px;
     line-height: 21.6px;
   }
 
