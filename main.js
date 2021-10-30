@@ -1,5 +1,4 @@
 let deviceWidth = window.innerWidth;
-// console.log(deviceWidth);
 
 let navOne = document.querySelector("#nav-1");
 let navTwo = document.querySelector("#nav-2");
