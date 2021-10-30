@@ -8,7 +8,27 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body style="margin: 6rem auto">
+  <body>
+    <header>
+      <div class="top_header"></div>
+      <nav class="nav-container">
+        <ul class="grid grid--cols-3 nav-links">
+          <li id="nav-1">Navigation Link One</li>
+          <li id="nav-2">Navigation Link Two</li>
+          <li id="nav-3">Navigation Link Three</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1 class="hero_header">Do the right thing</h1>
+        <picture>
+          <source media="(min-width: 426px)" srcset="images/desktop_hero.jpg" />
+          <source media="(max-width: 425px)" srcset="images/mobile_hero.jpg" />
+          <img class="hero__image" src="images/desktop_hero.jpg" alt="" />
+        </picture>
+      </section>
+    </main>
     <section class="card_section">
       <div class="block card_block">
         <h2>Credit Opportunities With Good Approval Odds †</h2>

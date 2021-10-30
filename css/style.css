@@ -36,13 +36,13 @@ h1 {
   color: var(--color-card);
   font-size: 102.18px;
   font-weight: 800;
-  line-height: 122.62px;
+  /* line-height: 122.62px; */
   /* line-height: 0px; */
   margin: 0;
 }
 
 h2 {
-  font-size: 20;
+  font-size: 20px;
   line-height: 36px;
 }
 
@@ -101,7 +101,7 @@ h3 {
   left: 57px;
   margin: 0;
   position: absolute;
-  top: 72px;
+  top: 167px;
 }
 
 @media screen and (max-width: 1162px) {
@@ -122,11 +122,16 @@ h3 {
 @media screen and (max-width: 425px) {
   .hero_header {
     font-size: 54px;
-    line-height: 64.26px;
-    margin: 42px auto;
+    /* padding-left: 32px; */
+    left: 0;
+    line-height: 64px;
+    top: 144px;
+    /* line-height: 64.26px; */
+    /* margin: 42px auto; */
   }
 
   .hero__image {
+    height: 410px;
     width: 100vw;
   }
 }
@@ -347,6 +352,13 @@ a {
   .card-info > li {
     font-size: 17px;
     margin-bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_header {
+    left: 35px;
+    top: 135px;
   }
 }
 
