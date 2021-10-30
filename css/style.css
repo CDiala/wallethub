@@ -41,6 +41,8 @@ h1 {
 h2 {
   font-size: 20px;
   line-height: 36px;
+  margin: 0 auto 30px;
+  max-width: 1002px;
 }
 
 h2::selection,
@@ -201,6 +203,7 @@ svg {
 }
 
 .card-main {
+  align-self: center;
   column-gap: 36px;
 }
 
@@ -263,7 +266,7 @@ svg {
 }
 
 .card-divider {
-  align-self: end;
+  align-self: center;
   width: 100%;
 }
 
@@ -371,6 +374,12 @@ a {
   }
 }
 
+@media screen and (max-width: 755px) {
+  .card {
+    padding: 20px;
+  }
+}
+
 @media screen and (min-width: 776px) and (max-width: 816px) {
   .card {
     padding: 30px 30px;
@@ -382,14 +391,6 @@ a {
 }
 
 @media screen and (min-width: 696px) {
-  .block {
-    padding: 30px;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
   .block.card_block h2 {
     font-size: 22px;
   }
